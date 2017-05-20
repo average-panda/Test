@@ -37,6 +37,10 @@ class test:
         Tembed.add_field(name="`❔`", value="For additional information type `*help`")
         Tembed.add_field(name="`⚠️`", value="If you are experiencing issues with the\nmusic bot, or if the bot is unavailable,\ncontact `average.panda`")
 
+        Tembed.add_field(name="`❔`", value="test test test", inline=True)
+        Tembed.add_field(name="`❔`", value="test test test", inline=True)
+        Tembed.add_field(name="`❔`", value="test test test", inline=False)
+        Tembed.add_field(name="`❔`", value="test test test", inline=False)
 
         #Your code will go here
         await self.bot.say(embed=Tembed)
