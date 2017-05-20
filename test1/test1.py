@@ -32,8 +32,7 @@ class test:
         Tembed.set_author(name="※ VOICE OF KEK ※", icon_url="https://cdn.discordapp.com/app-icons/284962616361877507/0a82d11f51b37ca2d500eff675a41b51.jpg")
         Tembed.set_footer(text="※ VOICE OF KEK ※ Music Bot v0.7 | Updated May 20th, 2017", icon_url="https://cdn.discordapp.com/app-icons/284962616361877507/0a82d11f51b37ca2d500eff675a41b51.jpg")
 
-        embed.add_field(name="Music:", value="*(these controls are available to everyone)*\n\n```fix\n*nowplaying = Shows the song that is currently playing``````fix\n*play <title|URL|subcommand> = plays the provided song```")
-        embed.add_field(name="DJ:", value="try exceeding some of them!")
+        Tembed.add_field(name="DJ:", value="```fix\n*nowplaying = Shows the song that is currently playing```")
         Tembed.add_field(name="🙄", value="an informative error should show up, and this view will remain as-is until all issues are fixed")
         Tembed.add_field(name="<:thonkang:219069250692841473>", value="???")
 
