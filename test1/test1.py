@@ -35,7 +35,7 @@ class test:
         Tembed.add_field(name="DJ:", value="*`❕ these controls are available to ❖ LORDS OF KEK ❖`*```fix\n*forceskip = skips the current song``````fix\n*skipto <position> = skips to the specified song``````fix\n*stop = stops the current song and clears the queue``````fix\n*volume [0-150] = sets or shows volume```\n\n\n")
 
         Tembed.add_field(name="`❔`", value="For additional information type `*help`")
-        Tembed.add_field(name="`⚠️`", value="If you are experiencing issues\nwith the music bot, or if\nthe bot is unavailable,\ncontact `average.panda`")
+        Tembed.add_field(name="`⚠️`", value="If you are experiencing issues with\nthe music bot, or if the bot is\nunavailable, contact `average.panda`")
 
 
         #Your code will go here
