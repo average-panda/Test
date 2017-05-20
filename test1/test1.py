@@ -33,7 +33,7 @@ class test:
 
         Tembed.add_field(name="Music:", value="*`❕ these controls are available to everyone`*\n```fix\n*nowplaying = shows the song that is currently playing``````fix\n*play <title|URL|subcommand> = plays the provided song``````fix\n*playlists = shows the available playlists``````fix\n*queue [pagenum] = shows the current queue``````fix\n*remove <position|ALL> = removes a song from the queue``````fix\n*shuffle = shuffles songs you have added``````fix\n*skip = votes to skip the current song```\n`search commands` ```fix\n*search <query> = searches Youtube for a provided query``````fix\n*scsearch <query> = searches Soundcloud for a provided query```")
         Tembed.add_field(name="DJ:", value="*`❕ these controls are available to ❖ LORDS OF KEK ❖`*```fix\n*forceskip = skips the current song``````fix\n*skipto <position> = skips to the specified song``````fix\n*stop = stops the current song and clears the queue``````fix\n*volume [0-150] = sets or shows volume```")
-        Tembed.add_field(name="_______", value="\n`❔` For additional information type `*help` \n`⚠️` If you are experiencing issues with the music bot contact **average.panda**.")
+        Tembed.add_field(name="_______", value="\n`❔` For additional information type `*help` \n`⚠️` If you are experiencing issues with the music bot, or if the bot becomes unavailable, please message **average.panda**.")
 
 
         #Your code will go here
