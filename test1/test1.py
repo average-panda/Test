@@ -9,21 +9,7 @@ class test:
         self.bot = bot
         
     @commands.command()
-    async def punch(self, user : discord.Member):
-        """I will puch anyone! >.<"""
-
-        #Your code will go here
-        await self.bot.say("ONE PUNCH! And " + user.mention + " is out! ლ(ಠ益ಠლ)")
-        
-    @commands.command()
-    async def mycom(self):
-        """This does stuff!"""
-
-        #Your code will go here
-        await self.bot.say("I can do stuff!")
-        
-    @commands.command()
-    async def mbotcoms(self):
+    async def mbc(self):
         """This does stuff!"""
 
         Tembed = discord.Embed(title="🎶 MUSIC BOT CONTROLS 🎶", colour=discord.Colour(0xffbe00), description="Please refer to the following list of commands for the music bot:\n")
