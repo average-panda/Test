@@ -8,7 +8,7 @@ class test:
     def __init__(self, bot):
         self.bot = bot
         
-        Tembed = discord.Embed(title="test", colour=discord.Colour(0x687508), url="https://discordapp.com", description="test")
+        Tembed = discord.Embed(title="test", colour=discord.Colour(0x687508), url="https://discordapp.com", description="```test```")
         Tembed.set_image(url="https://cdn.discordapp.com/embed/avatars/0.png")
         Tembed.set_thumbnail(url="https://cdn.discordapp.com/embed/avatars/0.png")
 
