@@ -14,16 +14,17 @@ class cd:
         """This does stuff!"""
         counter = 0
         try:
-            secondint = int(90)
-            message = await self.bot.say("```css" + "\n" + "[" + title +"]" + "\nTimer: " + seconds + "```")
+            seconds = 90
+            secondint = int(seconds)
+            message = await self.bot.say("```css" + "\n" + "[TITLE]" + "\nTimer: " + seconds + "```")
             while True:
                 secondint = secondint - 1
                 if secondint == 0:
                     await self.bot.edit_message(message, new_content=("```Ended!```"))
                     break
-                await self.bot.edit_message(message, new_content=("```css" + "\n" + "[" + title + "]" + "\nTimer: {0}```".format(secondint)))
+                await self.bot.edit_message(message, new_content=("```css" + "\n" + "[TITLE]" + "\nTimer: {0}```".format(secondint)))
                 await asyncio.sleep(1)
-            await self.bot.send_message(ctx.message.channel, ctx.message.author.mention + " Your countdown " + "[" + title + "]"  + " Has ended!")
+            await self.bot.send_message(ctx.message.channel, ctx.message.author.mention + " Your countdown " + "[TITLE]"  + " Has ended!")
         except ValueError:
             await self.bot.say("Must be a number!")
 
