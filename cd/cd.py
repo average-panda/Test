@@ -12,7 +12,7 @@ class cd:
     @commands.command()
     async def cd(self):
         """This does stuff!"""
-        seconds = 90
+        seconds = 15
         secondint = int(seconds)
         tbody = "TITLE\n body body body \n"
         while secondint < 0:
@@ -20,6 +20,8 @@ class cd:
             secondint = secondint - 1
             await self.bot.edit_message(message, new_content=("```css" + "\nTimer: {0}```".format(secondint)))
             await asyncio.sleep(1)
+            await self.bot.say("```css" + "\nTimer: " + secondsint + "```")
+        await self.bot.say("```css" + "\nTimer: " + secondsint + "```")
 
 def setup(bot):
     bot.add_cog(cd(bot))
