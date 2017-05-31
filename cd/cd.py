@@ -12,15 +12,20 @@ class cd:
     @commands.command()
     async def cd(self):
         """This does stuff!"""
-        def countdown(t):
-            t = 5
-            while t:
-                mins, secs = divmod(t, 60)
-                timeformat = '{:02d}:{:02d}'.format(mins, secs)
-                print(timeformat, end='\r')
-                time.sleep(1)
-                t -= 1
-        await self.bot.say(t + ' time')
-             
+        counter = 0
+        try:
+            secondint = int(90)
+            message = await self.bot.say("```css" + "\n" + "[" + title +"]" + "\nTimer: " + seconds + "```")
+            while True:
+                secondint = secondint - 1
+                if secondint == 0:
+                    await self.bot.edit_message(message, new_content=("```Ended!```"))
+                    break
+                await self.bot.edit_message(message, new_content=("```css" + "\n" + "[" + title + "]" + "\nTimer: {0}```".format(secondint)))
+                await asyncio.sleep(1)
+            await self.bot.send_message(ctx.message.channel, ctx.message.author.mention + " Your countdown " + "[" + title + "]"  + " Has ended!")
+        except ValueError:
+            await self.bot.say("Must be a number!")
+
 def setup(bot):
     bot.add_cog(cd(bot))
