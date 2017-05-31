@@ -17,8 +17,8 @@ class cd:
         while secondint < 0:
             await asyncio.sleep(1)
             secondint = secondint - 1
-            await self.bot.say("```css" + "\nTimer: " + secondsint + "```")
-        await self.bot.say("```css" + "\nDONE: " + secondsint + "```")
+            await self.bot.say("```css" + "\nTimer: " + secondint + "```")
+        await self.bot.say("```css" + "\nDONE: " + secondint + "```")
 
 def setup(bot):
     n = cd(bot)
