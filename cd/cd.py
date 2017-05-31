@@ -17,7 +17,7 @@ class cd:
         tbody = await self.bot.say(message)
         while secondint > 0:
             mins, secs = divmod(secondint, 60)
-            timeformat = '{:02d}m {:02d}s'.format(mins, secs)
+            timeformatm = '*{:02d}* minutes remaining... {:02d}s'.format(mins, secs)
             await self.bot.edit_message(tbody, new_content=("```css" + message + "\nTIME: " + timeformat + "```"))
             await asyncio.sleep(1)
             secondint = secondint - 1
