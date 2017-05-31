@@ -13,11 +13,11 @@ class cd:
         """This does stuff!"""
         seconds = 15
         secondint = int(seconds)
-        tbody = "TITLE\n body body body \n"
+        tbody = await self.bot.say("TITLE\n body body body \n")
         while secondint > 0:
             await asyncio.sleep(1)
             secondint = secondint - 1
-            await self.bot.edit_message(new_content=("```css" + "\nTIME: {0}```".format(secondint)))
+            await self.bot.edit_message(tbody, new_content=("```css" + "\nTIME: {0}```".format(secondint)))
         await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
 
 def setup(bot):
