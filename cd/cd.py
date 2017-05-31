@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import asyncio
-import time
 
 class cd:
     """Countdown test"""
@@ -17,6 +16,7 @@ class cd:
         tbody = "TITLE\n body body body \n"
         while secondint < 0:
             await asyncio.sleep(1)
+            secondint = secondint - 1
             await self.bot.say("```css" + "\nTimer: " + secondsint + "```")
         await self.bot.say("```css" + "\nDONE: " + secondsint + "```")
 
