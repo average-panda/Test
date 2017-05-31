@@ -21,4 +21,5 @@ class cd:
         await self.bot.say("```css" + "\nDONE: " + secondsint + "```")
 
 def setup(bot):
-    bot.add_cog(cd(bot))
+    n = cd(bot)
+    bot.add_cog(n)
