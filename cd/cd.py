@@ -11,7 +11,7 @@ class cd:
     @commands.command()
     async def cd(self):
         """This does stuff!"""
-        seconds = 115
+        seconds = 75
         secondint = int(seconds)
         message = "```TITLE TITLE TITLE\ntest test test\ntest test test\n"
         tbody = await self.bot.say(message)
