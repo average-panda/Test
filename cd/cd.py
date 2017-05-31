@@ -17,7 +17,7 @@ class cd:
         while secondint > 0:
             await asyncio.sleep(1)
             secondint = secondint - 1
-            await self.bot.edit_message(message, new_content=("```css" + "\nTIME: {0}```".format(secondint)))
+            await self.bot.edit_message(new_content=("```css" + "\nTIME: {0}```".format(secondint)))
         await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
 
 def setup(bot):
