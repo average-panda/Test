@@ -14,7 +14,7 @@ class cd:
         seconds = 15
         secondint = int(seconds)
         tbody = "TITLE\n body body body \n"
-        while secondint < 0:
+        while secondint > 0:
             await asyncio.sleep(1)
             secondint = secondint - 1
             await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
