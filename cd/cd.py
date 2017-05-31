@@ -14,15 +14,12 @@ class cd:
         """This does stuff!"""
         seconds = 90
         secondint = int(seconds)
+        tbody = "TITLE\n body body body \n"
         while secondint < 0:
             message = await self.bot.say("```css" + "\nTimer: " + seconds + "```")
             secondint = secondint - 1
-            if secondint == 0:
-                await self.bot.edit_message(message, new_content=("```Ended!```"))
-                break
             await self.bot.edit_message(message, new_content=("```css" + "\nTimer: {0}```".format(secondint)))
             await asyncio.sleep(1)
-        await self.bot.send_message(ctx.message.channel, ctx.message.author.mention + " Your countdown has ended!")
 
 def setup(bot):
     bot.add_cog(cd(bot))
