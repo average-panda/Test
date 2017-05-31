@@ -10,7 +10,7 @@ class cd:
         self.bot = bot
         
     @commands.command()
-    async def mbc(self):
+    async def cd(self):
         """This does stuff!"""
         def countdown(t):
             t = 5
