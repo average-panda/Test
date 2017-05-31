@@ -22,7 +22,7 @@ class cd:
                 break
             await self.bot.edit_message(message, new_content=("```css" + "\nTimer: {0}```".format(secondint)))
             await asyncio.sleep(1)
-        await self.bot.send_message(ctx.message.channel, ctx.message.author.mention + " Your countdown " + "[TITLE]"  + " Has ended!")
+        await self.bot.send_message(ctx.message.channel, ctx.message.author.mention + " Your countdown has ended!")
 
 def setup(bot):
     bot.add_cog(cd(bot))
