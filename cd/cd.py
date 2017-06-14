@@ -46,7 +46,7 @@ class cd:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
 
-        message2 = discord.Embed(title=ttl, description=ttldsc, color=0x2aa198)
+        message2 = discord.Embed(title=ttl, description=ttldsc, color=0xc0c0c0)
         message2.add_field(name=bdy1, value=bdydsc, inline=False)
         message2.add_field(name="Giveaway complete", value="```fix\nWinner = -winner- ```", inline=False)
         await self.bot.edit_message(tbody, embed=(message2))
