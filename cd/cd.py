@@ -32,7 +32,9 @@ class cd:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
 
-        await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
+        message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xff0000)
+        message2.add_field(name="Time remaining:", value="```fix\nWinner  =  " + "-winner-```", inline=True)
+        await self.bot.edit_message(tbody, embed=(message2))
 
 def setup(bot):
     n = cd(bot)
