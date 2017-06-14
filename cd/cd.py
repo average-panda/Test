@@ -21,6 +21,9 @@ class cd:
         message = discord.Embed(title=ttl, description=ttldsc, color=0x2aa198)
         message.add_field(name=bdy1, value=bdydsc, inline=False)
         tbody = await self.bot.say(embed=message)
+
+        await self.client.add_reaction(self.message, emoji)
+
         while secondint > 0:
             mins, secs = divmod(secondint, 60)
             timeformatm = '{:02d}:{:02d}'.format(mins, secs)
