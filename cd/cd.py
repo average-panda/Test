@@ -22,7 +22,7 @@ class cd:
         message.add_field(name=bdy1, value=bdydsc, inline=False)
         tbody = await self.bot.say(embed=message)
 
-        await self.bot.add_reaction(tbody, :gift:)
+        await self.bot.add_reaction(tbody, ord('\u20E3'))
 
         while secondint > 0:
             mins, secs = divmod(secondint, 60)
