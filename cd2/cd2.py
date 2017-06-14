@@ -9,7 +9,7 @@ class cd:
         self.bot = bot
         
     @commands.command()
-    async def cd(self):
+    async def cd2(self):
         """This does stuff!"""
         seconds = 75
         secondint = int(seconds)
@@ -30,5 +30,5 @@ class cd:
         await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
 
 def setup(bot):
-    n = cd(bot)
+    n = cd2(bot)
     bot.add_cog(n)
