@@ -19,7 +19,7 @@ class cd:
         while secondint > 0:
             mins, secs = divmod(secondint, 60)
             timeformatm = '{:02d}:{:02d}'.format(mins, secs)
-            if mins >= 1:
+            if mins > 1:
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0x0080ff)
                 message2.add_field(name="Time remaining:", value="```glsl\n-  " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
@@ -27,7 +27,7 @@ class cd:
                 secondint = secondint - 5
             else:
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xff0000)
-                message2.add_field(name="Time remaining:", value="```glsl\n-  " + timeformatm + "```", inline=True)
+                message2.add_field(name="Time remaining:", value="```diff\n-  " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
                 await asyncio.sleep(1)
                 secondint = secondint - 1
