@@ -22,11 +22,11 @@ class cd:
             if mins >= 1:
                 await asyncio.sleep(5)
                 secondint = secondint - 5
-                await self.bot.edit_message(tbody, new_content=(message + "\nTime remaining:```glsl\n- " + timeformatm + "```"))
+                await self.bot.edit_message(tbody, embed=(message + "\nTime remaining:```glsl\n- " + timeformatm + "```"))
             else:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
-                await self.bot.edit_message(tbody, new_content=(message + "\nTime remaining:```diff\n- " + timeformatm + "```"))
+                await self.bot.edit_message(tbody, embed=(message + "\nTime remaining:```diff\n- " + timeformatm + "```"))
 
         await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
 
