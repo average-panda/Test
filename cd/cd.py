@@ -21,19 +21,19 @@ class cd:
             timeformatm = '{:02d}:{:02d}'.format(mins, secs)
             if secondint > 60:
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0x0080ff)
-                message2.add_field(name="Time remaining:", value="```glsl\n-  " + timeformatm + "```", inline=True)
+                message2.add_field(name="Time remaining:", value="```glsl\n- " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
                 await asyncio.sleep(5)
                 secondint = secondint - 5
             else:
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xff0000)
-                message2.add_field(name="Time remaining:", value="```diff\n-  " + timeformatm + "```", inline=True)
+                message2.add_field(name="Time remaining:", value="```diff\n- " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
                 await asyncio.sleep(1)
                 secondint = secondint - 1
 
         message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xff0000)
-        message2.add_field(name="Time remaining:", value="```fix\nWinner  =  " + "-winner-```", inline=True)
+        message2.add_field(name="Giveaway complete", value="```fix\nWinner = " + "-winner- ```", inline=False)
         await self.bot.edit_message(tbody, embed=(message2))
 
 def setup(bot):
