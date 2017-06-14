@@ -23,13 +23,13 @@ class cd:
                 await asyncio.sleep(5)
                 secondint = secondint - 5
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0x0080ff)
-                message2.add_field(name="Time remaining:", value="```glsl\n-" + timeformatm + "```", inline=True)
+                message2.add_field(name="Time remaining:", value="```glsl\n-  " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
             else:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xff0000)
-                message2.add_field(name="Time remaining:", value="```glsl\n-" + timeformatm + "```", inline=True)
+                message2.add_field(name="Time remaining:", value="```glsl\n-  " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
 
         await self.bot.say("```css" + "\nDONE: {0}```".format(secondint))
