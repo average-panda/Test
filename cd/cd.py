@@ -13,7 +13,11 @@ class cd:
         """This does stuff!"""
         seconds = 75
         secondint = int(seconds)
-        message = discord.Embed(title="TEST TEST", description="test test test", color=0x2aa198)
+        ttl = "TITLE TEST"
+        ttldsc = "description test test test"
+        
+
+        message = discord.Embed(title=ttl, description=ttldsc, color=0x2aa198)
         message.add_field(name="time here TITLE", value="time here", inline=False)
         tbody = await self.bot.say(embed=message)
         while secondint > 0:
