@@ -39,7 +39,7 @@ class cd:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
             else:
-                message2 = discord.Embed(title=ttl, description=ttldsc, color=0x2aa198)
+                message2 = discord.Embed(title=ttl, description=ttldsc, color=0xff0000)
                 message2.add_field(name=bdy1, value=bdydsc, inline=False)
                 message2.add_field(name="Time remaining:", value="```diff\n- " + timeformatm + "```", inline=True)
                 await self.bot.edit_message(tbody, embed=(message2))
