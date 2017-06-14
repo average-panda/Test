@@ -22,7 +22,9 @@ class cd:
             if mins >= 1:
                 await asyncio.sleep(5)
                 secondint = secondint - 5
-                await self.bot.edit_message(tbody, embed=(message + "\nTime remaining:```glsl\n- " + timeformatm + "```"))
+                message2 = discord.Embed(title="TEST TEST", description="test test test", color=0x0080ff)
+                message2.add_field(name="Time remaining:", value="```glsl\n-" + timeformatm + "```", inline=False)
+                await self.bot.edit_message(tbody, embed=(message2))
             else:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
