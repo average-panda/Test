@@ -25,6 +25,12 @@ class cd:
                 await self.bot.edit_message(tbody, embed=(message2))
                 await asyncio.sleep(5)
                 secondint = secondint - 5
+            elif secondint > 30:
+                message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xffb300)
+                message2.add_field(name="Time remaining:", value="```fix\n- " + timeformatm + "```", inline=True)
+                await self.bot.edit_message(tbody, embed=(message2))
+                await asyncio.sleep(1)
+                secondint = secondint - 1
             else:
                 message2 = discord.Embed(title="TEST TEST", description="test test test", color=0xff0000)
                 message2.add_field(name="Time remaining:", value="```diff\n- " + timeformatm + "```", inline=True)
