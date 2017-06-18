@@ -54,12 +54,6 @@ class cd:
                 await asyncio.sleep(1)
                 secondint = secondint - 1
 
-        async def on_message(tbody):
-        if message.content.startswith('$react'):
-        msg = await bot.send_message(tbody.channel, 'React with thumbs up or thumbs down.')
-        res = await bot.wait_for_reaction(['👍', '👎'], tbody=msg)
-        await client.send_message(tbody.channel, '{0.user} reacted with {0.reaction.emoji}!'.format(res))
-
         message2 = discord.Embed(title=ttl, description=ttldsc, color=0xc0c0c0)
         message2.add_field(name=bdy1, value=bdydsc, inline=False)
         message2.add_field(name="Giveaway complete", value="```fix\nWinner = -winner- ```", inline=False)
