@@ -31,11 +31,22 @@ class CRYPTO:
                 return ticker["result"]
 
         return None
-        
+    
+    def getTickerDataNEO():
+        pair = ("BTC-Neo")
+        url = "https://bittrex.com/api/v1.1/public/getmarketsummary?market=" + pair
+
+        with urllib.request.urlopen(url) as url:
+            ticker = json.loads(url.read().decode())
+            if ticker["success"] == True:
+                return ticker["result"]
+
+        return None
+    
     @commands.command()
     async def CRYPTO(self):
         """This does stuff!"""
-        ticker = getTickerData("BTC-Neo")
+        ticker = getTickerDataNEO()
         ticker = ticker[0]
         pair = ticker["MarketName"]
         coin = getReadableCoinName(pair.split("-")[1])
