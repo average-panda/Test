@@ -35,7 +35,7 @@ class CRYPTO:
     @commands.command()
     async def CRYPTO(self):
         """This does stuff!"""
-        ticker = "neo"
+        ticker = getTickerData("BTC-Neo")
         ticker = ticker[0]
         pair = ticker["MarketName"]
         coin = getReadableCoinName(pair.split("-")[1])
