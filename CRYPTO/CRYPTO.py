@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 import urllib.request, json
 
-class CR:
+class CRYPTO:
     """Crypto Test"""
 
     def __init__(self, bot):
@@ -22,10 +22,10 @@ class CR:
         return None
         
     @commands.command()
-    async def cr(self):
+    async def CRYPTO(self):
         """This does stuff!"""
         await self.bot.say("Test")
 
 def setup(bot):
-    n = cr(bot)
+    n = CRYPTO(bot)
     bot.add_cog(n)
